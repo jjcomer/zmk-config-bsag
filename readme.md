@@ -1,7 +1,7 @@
 # ZMK Miryoku-inspired firmware for the TOTEM keyboard
 
 <figure>
-<img src="./keymap.svg" alt="Miryoku inspired keymap for TOTEM keyboard, showing all six layers" width="100%" />
+<img src="./keymap-drawer/totem.svg" alt="Miryoku inspired keymap for TOTEM keyboard, showing all six layers" width="100%" />
 <figcaption>Keyboard layout for all layers and combos</figcaption>
 </figure>
 
