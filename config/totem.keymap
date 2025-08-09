@@ -22,6 +22,8 @@
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
 #define FWD &kp LG(RBKT)
+#define SCRCAP &kp LS(LG(N4))
+#define LOCK &kp LC(LG(Q))
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -111,7 +113,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
         nav_layer { 
             bindings = <
-            &kp LS(LG(N4))   &kp LC(LG(Q))  ___            ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
+            SCRCAP           LOCK           ___            ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
             &kp LCTRL        &kp LALT       &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
     BACK    ___              ___            &kp MEH        &kp HYP         ___                ___           &kp TILDE         ___             &kp FSLH      ___             FWD
                                             ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
