@@ -29,7 +29,7 @@ layers:
   - X
   - B
   - {t: M, h: Meh+LGUI}
-  - {t: ',', h: Sft+Ctl+LALT, s: ;}
+  - W
   - V
   - Z
   - TAB
