@@ -196,6 +196,9 @@ layers:
   - PLAY PAUSE
   - MUTE
 combos:
+- p: [0, 10]
+  k: '!'
+  l: [default, nav, num]
 - p: [1, 11]
   k: '@'
   l: [default, nav, num]
