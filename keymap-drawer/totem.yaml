@@ -232,6 +232,9 @@ combos:
 - p: [23, 24]
   k: Gui+V
   l: [default, nav, num]
+- p: [1, 2]
+  k: '?'
+  l: [default, nav, num]
 - p: [5, 15]
   k: ^
   l: [default, nav, num]
