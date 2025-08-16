@@ -33,11 +33,11 @@ layers:
   - V
   - Z
   - TAB
-  - {t: ESC, h: util}
+  - {t: BSPC, h: util}
   - {t: SPACE, h: nav}
-  - {t: LSHFT, h: sticky}
   - RET
-  - {t: BSPC, h: num}
+  - RET
+  - {t: SPACE, h: num}
   - {t: DEL, h: fun}
   nav:
   - Sft+Gui+4
