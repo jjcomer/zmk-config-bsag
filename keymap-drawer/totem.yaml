@@ -38,7 +38,7 @@ layers:
   - RET
   - RET
   - {t: SPACE, h: num}
-  - {t: DEL, h: fun}
+  - {t: BSPC, h: fun}
   nav:
   - Sft+Gui+4
   - Ctl+Gui+Q
@@ -72,11 +72,11 @@ layers:
   - /
   - {t: ▽, type: trans}
   - Gui+]
-  - {t: ▽, type: trans}
+  - DEL
   - {type: held}
   - {t: ▽, type: trans}
   - RET
-  - BSPC
+  - SPACE
   - DEL
   num:
   - +
