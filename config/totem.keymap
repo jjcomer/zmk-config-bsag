@@ -108,7 +108,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             &kp SQT         &kp COMMA     &kp PERIOD       &kp P            &kp Y              &kp F         &kp G              &kp C            &kp R         &kp L 
             &hml LCTRL A    &hml LALT O   &hml LGUI E      &hml LSHFT U     &kp I              &kp D         &hmr RSHFT H       &hmr RGUI T      &hmr LALT N   &hmr RCTRL S
 &kp TAB     &kp SEMICOLON   &kp Q         &hml MEH J       &hml HYP K       &kp X              &kp B         &hmr HYP M         &kp W            &kp V         &kp Z        &kp TAB
-                                          &lt UTIL BSPC    &lt NAV SPACE    &kp RET            &kp RET       &lt NUM SPACE      &lt FUN DEL
+                                          &lt UTIL BSPC    &lt NAV SPACE    &kp RET            &kp RET       &lt NUM SPACE      &lt FUN BSPC
             >;
         };
         nav_layer { 
@@ -116,7 +116,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             SCRCAP           LOCK           ___            ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
             &kp LCTRL        &kp LALT       &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
     BACK    ___              ___            &kp MEH        &kp HYP         ___                ___           &kp TILDE         ___             &kp FSLH      ___             FWD
-                                            ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
+                                            &kp DEL        ___             ___                &kp RET       &kp SPACE          &kp DEL
             >;
         }; 
         num_layer {
