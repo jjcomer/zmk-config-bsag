@@ -75,30 +75,6 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
-// special HRMs for the right meh key, as it involves a modmorph
-MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
-// MAKE_HRM(hmr_lpar, &kp, &lpar, KEYS_L THUMBS)    // "    "   "   "
-// MAKE_HRM(hmr_rpar, &kp, &rpar, KEYS_L THUMBS)    // "    "   "   "
-
-// mod_morph keys
-// tap: qmark | shift + tap: excl
-ZMK_BEHAVIOR(qexcl, mod_morph,
-    bindings = <&kp QMARK>, <&kp EXCL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: comma | shift + tap: semicolon 
-ZMK_BEHAVIOR(comma_morph, mod_morph,
-    bindings = <&kp COMMA>, <&kp SEMICOLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: dot | shift + tap: colon 
-ZMK_BEHAVIOR(dot_morph, mod_morph,
-    bindings = <&kp DOT>, <&kp COLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
 / {
 // TODO: Add hyper key as HRM
     keymap {
@@ -107,7 +83,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
             &kp SQT         &kp COMMA     &kp PERIOD       &kp P            &kp Y              &kp F         &kp G              &kp C            &kp R         &kp L 
             &hml LCTRL A    &hml LALT O   &hml LGUI E      &hml LSHFT U     &kp I              &kp D         &hmr RSHFT H       &hmr RGUI T      &hmr LALT N   &hmr RCTRL S
-&kp TAB     &kp SEMICOLON   &kp Q         &hml MEH J       &hml HYP K       &kp X              &kp B         &hmr HYP M         &kp W            &kp V         &kp Z        &kp TAB
+&kp TAB     &kp SEMICOLON   &kp Q         &hml MEH J       &hml HYP K       &kp X              &kp B         &hmr HYP M         &kp W            &kp V         &kp Z        &kp ESC
                                           &lt UTIL BSPC    &lt NAV SPACE    &kp RET            &kp RET       &lt NUM SPACE      &lt FUN BSPC
             >;
         };
@@ -139,7 +115,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR     ___                ___           ___                &kp C_VOL_UP    ___           ___
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___ 
-    ___     ___          ___          ___             &kp HYP        ___                ___           ___                ___             ___           ___             ___
+    ___     ___          ___          ___             &kp HYP        ___                ___           ___                &kp C_PREV      &kp C_NEXT    ___             ___
                                       ___             ___            ___                ___           &kp C_PLAY_PAUSE   &kp C_MUTE
             >;
         };  
